@@ -1,0 +1,1549 @@
+2022-11-04T15:00:22.393Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=ABGWMvpCOQ5TzGaruWbSOyeFx9DrdJvtFTgNmV25caRnlxsQRo&redirect_uri=http%3A%2F%2Flocalhost%3A8000&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T15:33:40.752Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=ABGWMvpCOQ5TzGaruWbSOyeFx9DrdJvtFTgNmV25caRnlxsQRo&redirect_uri=http%3A%2F%2Flocalhost%3A8000&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T17:28:18.982Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=ABGWMvpCOQ5TzGaruWbSOyeFx9DrdJvtFTgNmV25caRnlxsQRo&redirect_uri=http%3A%2F%2Flocalhost%3A8000&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T17:28:38.839Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=ABGWMvpCOQ5TzGaruWbSOyeFx9DrdJvtFTgNmV25caRnlxsQRo&redirect_uri=http%3A%2F%2Flocalhost%3A8000&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T17:29:22.369Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=ABGWMvpCOQ5TzGaruWbSOyeFx9DrdJvtFTgNmV25caRnlxsQRo&redirect_uri=http%3A%2F%2Flocalhost%3A8000&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T17:35:59.356Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=ABGWMvpCOQ5TzGaruWbSOyeFx9DrdJvtFTgNmV25caRnlxsQRo&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T18:35:33.141Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T18:35:38.912Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667586933113
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 18:35:40 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63655b7c-64c0691d5dddcf5b4c7545bf",
+        "x-spanid": "768e0792-ab43-4f8c-86bc-8eaa81b0a80f",
+        "x-amzn-trace-id": "Root=1-63655b7c-64c0691d5dddcf5b4c7545bf",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63655b7c-64c0691d5dddcf5b4c7545bf"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63655b7c-64c0691d5dddcf5b4c7545bf"
+}
+2022-11-04T18:37:02.343Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T18:37:10.637Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667587022318
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 18:37:12 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63655bd8-1dd9067079eae87a3caa205f",
+        "x-spanid": "10798f21-3b7f-46da-ae66-e2521aee7ce4",
+        "x-amzn-trace-id": "Root=1-63655bd8-1dd9067079eae87a3caa205f",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63655bd8-1dd9067079eae87a3caa205f"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63655bd8-1dd9067079eae87a3caa205f"
+}
+2022-11-04T18:38:03.136Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T18:38:10.104Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667587083112
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 18:38:11 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63655c13-7a8b183e024f1121502e306a",
+        "x-spanid": "ebc01cbf-6b29-4e2c-8a0b-a4e691a46511",
+        "x-amzn-trace-id": "Root=1-63655c13-7a8b183e024f1121502e306a",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "2",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63655c13-7a8b183e024f1121502e306a"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63655c13-7a8b183e024f1121502e306a"
+}
+2022-11-04T18:40:13.725Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T18:40:15.811Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667587213696,
+      "state": "testState"
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 18:40:17 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63655c91-6e1e4096423a9a6900123bab",
+        "x-spanid": "173de918-2148-4938-8fd8-911696dd1dd2",
+        "x-amzn-trace-id": "Root=1-63655c91-6e1e4096423a9a6900123bab",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63655c91-6e1e4096423a9a6900123bab"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63655c91-6e1e4096423a9a6900123bab"
+}
+2022-11-04T18:48:23.564Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T18:48:29.663Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667587703522
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 18:48:31 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63655e7f-0d265f5f50a33603756c29d8",
+        "x-spanid": "5144156d-dfb0-4ebe-87a5-87af5631a0ec",
+        "x-amzn-trace-id": "Root=1-63655e7f-0d265f5f50a33603756c29d8",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "4",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63655e7f-0d265f5f50a33603756c29d8"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63655e7f-0d265f5f50a33603756c29d8"
+}
+2022-11-04T19:16:37.416Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T19:17:44.368Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T19:18:25.051Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T19:18:34.271Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667589505023
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 19:18:32 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63656588-60bc488b654d0176311c7fa4",
+        "x-spanid": "1c062804-19e6-42a6-9726-bbcfeaec8dd3",
+        "x-amzn-trace-id": "Root=1-63656588-60bc488b654d0176311c7fa4",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63656588-60bc488b654d0176311c7fa4"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63656588-60bc488b654d0176311c7fa4"
+}
+2022-11-04T19:22:48.557Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T19:22:53.929Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667589768489
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 19:22:54 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-6365668e-70cb689b2ad68f053c085541",
+        "x-spanid": "e00adaf5-7e5a-4c42-ac7a-c3c1ec074b42",
+        "x-amzn-trace-id": "Root=1-6365668e-70cb689b2ad68f053c085541",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "4",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-6365668e-70cb689b2ad68f053c085541"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-6365668e-70cb689b2ad68f053c085541"
+}
+2022-11-04T19:27:19.939Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T19:27:23.448Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667590039938
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 19:27:23 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-6365679b-4f8fe80421b8015b0a0084df",
+        "x-spanid": "10c7c59e-414d-4a46-b926-74525723b058",
+        "x-amzn-trace-id": "Root=1-6365679b-4f8fe80421b8015b0a0084df",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "4",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-6365679b-4f8fe80421b8015b0a0084df"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-6365679b-4f8fe80421b8015b0a0084df"
+}
+2022-11-04T19:27:47.085Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T19:28:04.387Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667590067061
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 19:28:05 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-636567c5-0a1c4e4266738c6c5cc3c8ab",
+        "x-spanid": "c7f9525d-2a0b-4efe-9666-e12e3fbce601",
+        "x-amzn-trace-id": "Root=1-636567c5-0a1c4e4266738c6c5cc3c8ab",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "4",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-636567c5-0a1c4e4266738c6c5cc3c8ab"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-636567c5-0a1c4e4266738c6c5cc3c8ab"
+}
+2022-11-04T19:30:38.302Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T19:30:54.810Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667590238271
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 19:30:54 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-6365686e-6850adec0341c72d72dc652e",
+        "x-spanid": "e6bb7b92-a64f-4c20-b5ca-6d873b2090a8",
+        "x-amzn-trace-id": "Root=1-6365686e-6850adec0341c72d72dc652e",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-6365686e-6850adec0341c72d72dc652e"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-6365686e-6850adec0341c72d72dc652e"
+}
+2022-11-04T19:34:00.392Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T19:34:07.734Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667590440359
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 19:34:08 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63656930-67bdbf681c908b6238ba27f0",
+        "x-spanid": "b61b6065-731e-4aba-b103-cfadd90b8e52",
+        "x-amzn-trace-id": "Root=1-63656930-67bdbf681c908b6238ba27f0",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63656930-67bdbf681c908b6238ba27f0"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63656930-67bdbf681c908b6238ba27f0"
+}
+2022-11-04T19:34:46.040Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T19:34:49.850Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667590486011
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 19:34:50 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-6365695a-0a3202e944046d0a573b077a",
+        "x-spanid": "ef6a80fc-995b-4cf2-be4f-304d9699b47a",
+        "x-amzn-trace-id": "Root=1-6365695a-0a3202e944046d0a573b077a",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "4",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-6365695a-0a3202e944046d0a573b077a"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-6365695a-0a3202e944046d0a573b077a"
+}
+2022-11-04T19:39:56.741Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T19:40:01.534Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667590796712
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 19:40:00 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63656a90-2f31c46f29e2c50e277c7d3a",
+        "x-spanid": "29e24771-a36c-4c11-ab03-45330254abd0",
+        "x-amzn-trace-id": "Root=1-63656a90-2f31c46f29e2c50e277c7d3a",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63656a90-2f31c46f29e2c50e277c7d3a"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63656a90-2f31c46f29e2c50e277c7d3a"
+}
+2022-11-04T19:47:46.993Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T19:47:49.050Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667591266969
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 19:47:50 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63656c66-4bfb5b2f42f44664206bb212",
+        "x-spanid": "c35ac28e-c0c5-4002-886d-8a48e354692e",
+        "x-amzn-trace-id": "Root=1-63656c66-4bfb5b2f42f44664206bb212",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63656c66-4bfb5b2f42f44664206bb212"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63656c66-4bfb5b2f42f44664206bb212"
+}
+2022-11-04T19:52:40.689Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T19:52:45.110Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667591560669,
+      "state": "testState"
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 19:52:45 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63656d8d-4364f35e552ad1b93791ed61",
+        "x-spanid": "a84d72de-e478-4f5b-8c4b-04d8bbf75307",
+        "x-amzn-trace-id": "Root=1-63656d8d-4364f35e552ad1b93791ed61",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "2",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63656d8d-4364f35e552ad1b93791ed61"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63656d8d-4364f35e552ad1b93791ed61"
+}
+2022-11-04T19:54:57.440Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T19:55:03.396Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667591697415,
+      "state": "testState"
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 19:55:03 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63656e17-4737d60871860cb17aa912e0",
+        "x-spanid": "16314e62-914c-41f9-8617-617aa80647e7",
+        "x-amzn-trace-id": "Root=1-63656e17-4737d60871860cb17aa912e0",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63656e17-4737d60871860cb17aa912e0"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63656e17-4737d60871860cb17aa912e0"
+}
+2022-11-04T20:03:05.360Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=testState
+2022-11-04T20:03:08.551Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667592185321
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 20:03:09 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63656ffd-3095a0ef4a0fdcb016ec965f",
+        "x-spanid": "568c80ca-5033-4303-84bb-a522141cf174",
+        "x-amzn-trace-id": "Root=1-63656ffd-3095a0ef4a0fdcb016ec965f",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "4",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63656ffd-3095a0ef4a0fdcb016ec965f"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63656ffd-3095a0ef4a0fdcb016ec965f"
+}
+2022-11-04T22:24:07.335Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-04T22:24:09.685Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667600647312,
+      "state": "intuit-test"
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 22:24:09 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63659109-4024dc2069fb80570ce789f8",
+        "x-spanid": "47cd0f69-ab0e-441e-9300-f58e65540ec9",
+        "x-amzn-trace-id": "Root=1-63659109-4024dc2069fb80570ce789f8",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63659109-4024dc2069fb80570ce789f8"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63659109-4024dc2069fb80570ce789f8"
+}
+2022-11-04T22:24:30.186Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-04T22:24:32.241Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667600670168,
+      "state": "intuit-test"
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 22:24:32 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-6365911f-26c12d5b447f486e0eeb64b7",
+        "x-spanid": "f0c598ed-a058-482e-ac05-3bbb383129f0",
+        "x-amzn-trace-id": "Root=1-6365911f-26c12d5b447f486e0eeb64b7",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-6365911f-26c12d5b447f486e0eeb64b7"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-6365911f-26c12d5b447f486e0eeb64b7"
+}
+2022-11-04T22:25:01.626Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-04T22:25:03.691Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667600701609,
+      "state": "intuit-test"
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 22:25:03 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-6365913f-46ab12cd395328012fb3a0bb",
+        "x-spanid": "a787bad6-a557-42fd-b49d-6f41f4dc5141",
+        "x-amzn-trace-id": "Root=1-6365913f-46ab12cd395328012fb3a0bb",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-6365913f-46ab12cd395328012fb3a0bb"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-6365913f-46ab12cd395328012fb3a0bb"
+}
+2022-11-04T22:26:47.794Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-04T22:26:51.643Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667600807775,
+      "state": "intuit-test"
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 22:26:51 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-636591ab-67b7629339bc8b3d208438e6",
+        "x-spanid": "99232285-99f1-4bdd-9159-0eac0e9bd47b",
+        "x-amzn-trace-id": "Root=1-636591ab-67b7629339bc8b3d208438e6",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "4",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-636591ab-67b7629339bc8b3d208438e6"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-636591ab-67b7629339bc8b3d208438e6"
+}
+2022-11-04T22:33:43.949Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-04T22:33:46.772Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667601223932,
+      "state": "intuit-test"
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 22:33:46 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-6365934a-2dca52744d249d627e3b4501",
+        "x-spanid": "f799d716-b0ef-4066-8a48-6ab57335cbe7",
+        "x-amzn-trace-id": "Root=1-6365934a-2dca52744d249d627e3b4501",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "4",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-6365934a-2dca52744d249d627e3b4501"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-6365934a-2dca52744d249d627e3b4501"
+}
+2022-11-04T22:34:48.171Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-04T22:34:50.050Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667601288151,
+      "state": "intuit-test"
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 22:34:49 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63659389-6c9386fb04a0462450187502",
+        "x-spanid": "fcdc4e43-c244-4b70-9fd2-1d67fb2e4d26",
+        "x-amzn-trace-id": "Root=1-63659389-6c9386fb04a0462450187502",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "4",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63659389-6c9386fb04a0462450187502"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63659389-6c9386fb04a0462450187502"
+}
+2022-11-04T22:35:31.961Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-04T22:35:33.885Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667601331944,
+      "state": "intuit-test"
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 22:35:33 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-636593b5-139d4e6347231a495dbd2b46",
+        "x-spanid": "6a3961a8-94f3-4e89-a919-7de709cbaece",
+        "x-amzn-trace-id": "Root=1-636593b5-139d4e6347231a495dbd2b46",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-636593b5-139d4e6347231a495dbd2b46"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-636593b5-139d4e6347231a495dbd2b46"
+}
+2022-11-04T22:43:37.690Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-04T22:43:39.624Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667601817672,
+      "state": "intuit-test"
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 22:43:39 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-6365959b-5678846a3ce7811b372e2346",
+        "x-spanid": "12d7b4e9-eb2e-4a09-9f11-9f85ee65b57c",
+        "x-amzn-trace-id": "Root=1-6365959b-5678846a3ce7811b372e2346",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "2",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-6365959b-5678846a3ce7811b372e2346"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-6365959b-5678846a3ce7811b372e2346"
+}
+2022-11-04T22:46:34.471Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-04T22:46:40.718Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667601994452,
+      "state": "intuit-test"
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 22:46:40 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63659650-128fb2360792fef46b1ab736",
+        "x-spanid": "d3943546-a024-492a-98df-5c347a0c903c",
+        "x-amzn-trace-id": "Root=1-63659650-128fb2360792fef46b1ab736",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63659650-128fb2360792fef46b1ab736"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63659650-128fb2360792fef46b1ab736"
+}
+2022-11-04T22:51:44.097Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-04T22:52:44.115Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-04T22:53:11.219Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-04T22:53:34.239Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-04T22:55:37.859Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-04T22:56:12.428Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-04T22:58:23.125Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-04T22:59:07.019Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-04T23:18:39.649Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667603917626
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Fri, 04 Nov 2022 23:18:39 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63659dcf-4ee02ea2280ce6f21c9fd2c5",
+        "x-spanid": "6b3af185-8997-4cde-a0a6-7029f639c0ec",
+        "x-amzn-trace-id": "Root=1-63659dcf-4ee02ea2280ce6f21c9fd2c5",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63659dcf-4ee02ea2280ce6f21c9fd2c5"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63659dcf-4ee02ea2280ce6f21c9fd2c5"
+}
+2022-11-05T08:18:30.895Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667636308108
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Sat, 05 Nov 2022 08:18:31 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63661c56-3396cb63130805c2552bbe3a",
+        "x-spanid": "0d105e0a-73aa-4519-aae4-e6e3618288c7",
+        "x-amzn-trace-id": "Root=1-63661c56-3396cb63130805c2552bbe3a",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "4",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63661c56-3396cb63130805c2552bbe3a"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63661c56-3396cb63130805c2552bbe3a"
+}
+2022-11-05T09:32:15.534Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-05T09:43:28.817Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-05T09:44:21.992Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667641459128
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Sat, 05 Nov 2022 09:44:21 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-63663075-4706547972e7008717b83258",
+        "x-spanid": "59104a49-c2c7-49e5-8c87-210a50284c04",
+        "x-amzn-trace-id": "Root=1-63663075-4706547972e7008717b83258",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-63663075-4706547972e7008717b83258"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-63663075-4706547972e7008717b83258"
+}
+2022-11-06T17:23:08.186Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-06T18:13:10.387Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-06T18:16:15.415Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667758240911
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Sun, 06 Nov 2022 18:16:15 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-6367f9ef-3361216855ff604c45e92ccb",
+        "x-spanid": "af79a7e0-324e-4d5a-9fb4-b4a133938481",
+        "x-amzn-trace-id": "Root=1-6367f9ef-3361216855ff604c45e92ccb",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "4",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-6367f9ef-3361216855ff604c45e92ccb"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-6367f9ef-3361216855ff604c45e92ccb"
+}
+2022-11-06T18:19:18.327Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-06T18:19:21.791Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667758751242,
+      "state": "intuit-test"
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Sun, 06 Nov 2022 18:19:21 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-6367faa9-03b8a8434a75c1b112d105a6",
+        "x-spanid": "1f04f057-dbe9-46a6-beb0-8e2e5736257c",
+        "x-amzn-trace-id": "Root=1-6367faa9-03b8a8434a75c1b112d105a6",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-6367faa9-03b8a8434a75c1b112d105a6"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-6367faa9-03b8a8434a75c1b112d105a6"
+}
+2022-11-06T18:21:14.398Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
+2022-11-06T18:23:03.479Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667758846114
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Sun, 06 Nov 2022 18:23:04 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-6367fb88-438d199819049e08417561dc",
+        "x-spanid": "8833ee7b-480f-4e26-830a-fb4800f25e93",
+        "x-amzn-trace-id": "Root=1-6367fb88-438d199819049e08417561dc",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "3",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-6367fb88-438d199819049e08417561dc"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-6367fb88-438d199819049e08417561dc"
+}
+2022-11-06T18:24:21.417Z error: Create Token () threw an exception : {
+  "authResponse": {
+    "token": {
+      "realmId": "",
+      "token_type": "",
+      "access_token": "",
+      "refresh_token": "",
+      "expires_in": 0,
+      "x_refresh_token_expires_in": 0,
+      "id_token": "",
+      "latency": 60000,
+      "createdAt": 1667759036085
+    },
+    "response": {
+      "url": "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer",
+      "headers": {
+        "date": "Sun, 06 Nov 2022 18:24:22 GMT",
+        "content-type": "application/json;charset=utf-8",
+        "content-length": "27",
+        "connection": "close",
+        "intuit_tid": "1-6367fbd6-3d407b7c196c516d54fac3f4",
+        "x-spanid": "71cf4e91-ad66-42f9-b884-2263b650fb8e",
+        "x-amzn-trace-id": "Root=1-6367fbd6-3d407b7c196c516d54fac3f4",
+        "x-content-type-options": "nosniff",
+        "server": "envoy",
+        "cache-control": "no-cache, no-store",
+        "pragma": "no-cache",
+        "x-envoy-upstream-service-time": "4",
+        "strict-transport-security": "max-age=31536000"
+      },
+      "body": "{\"error\":\"invalid_request\"}",
+      "status": 400,
+      "statusText": "Bad Request"
+    },
+    "body": "{\"error\":\"invalid_request\"}",
+    "json": {
+      "error": "invalid_request"
+    },
+    "intuit_tid": "1-6367fbd6-3d407b7c196c516d54fac3f4"
+  },
+  "originalMessage": "Response has an Error",
+  "error": "invalid_request",
+  "error_description": "Bad Request",
+  "intuit_tid": "1-6367fbd6-3d407b7c196c516d54fac3f4"
+}
+2022-11-06T23:26:00.399Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting&state=intuit-test
+2022-11-06T23:37:13.359Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting&state=intuit-test
+2022-11-07T07:34:36.205Z info: The Authorize Uri is :https://appcenter.intuit.com/connect/oauth2?client_id=AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Fcallback&response_type=code&scope=com.intuit.quickbooks.accounting%20openid&state=intuit-test
