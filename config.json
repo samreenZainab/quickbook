@@ -1,21 +1,29 @@
 {
+  "dbConnection": "mongodb+srv://Zainab_Samreen:s@mreenZainab06@cluster0.cociq.mongodb.net/quickbookUsers?retryWrites=true&w=majority",
   "dbUri": "mongodb+srv://samreenZainab:samreenZainab06@cluster1.pzvjupb.mongodb.net/quickbookUsers?retryWrites=true&w=majority",
   "configurationEndpoint": "https://developer.api.intuit.com/.well-known/openid_sandbox_configuration/",
   "api_uri": "https://sandbox-quickbooks.api.intuit.com/v3/company/",
-  "scopes": {
-    "sign_in_with_intuit": ["openid", "profile", "email", "phone", "address"],
-    "connect_to_quickbooks": [
-      "com.intuit.quickbooks.accounting",
-      "com.intuit.quickbooks.payment"
-    ],
-    "connect_handler": [
-      "com.intuit.quickbooks.accounting",
-      "com.intuit.quickbooks.payment",
-      "openid",
-      "profile",
-      "email",
-      "phone",
-      "address"
-    ]
+
+  "OAuthClient": {
+    "clientId": "ABa504quLHVnjPUuYtBJebDwji8Dm50fBq4xfgPnsdWmYiwYBl",
+    "clientSecret": "c17iF7adZLIS19x3RfLyEaZnXPdZy28ThE9s7RFH",
+    "environment": ["sandbox", "production"],
+    "redirectUri": "http://localhost:8000/callback"
+  },
+  "qbookAssets": {
+    "oauthAssets": {
+      "realmId": "4620816365253063740",
+      "oauth_code": "AB116680036828ZZ5PbjqoHx6iKMNtY1xJ87sLgwCGNbz7cY9r"
+    }
+  },
+  "refreshToken": "AB11676729844xnunxGK9px2cb7Va57IqYlbjqtM7zMh7ktqf0",
+  "qData": {
+    "realmId": "4620816365253063740",
+    "accessToken": "eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiZGlyIn0..imISGc-5Vx3w4pziYpHw5w.pR1kULSifrV9Ma64-7oGvkXoE0tRoQAwZx77Po8t-JI3YkVMXDcxivUsqptdsE1kqnssoB5y_Bc4ypLlcc2nvBtxcmwrhYTh6dPT6POPocS9nnk9BnbkDnF9zTD8FawatkT7EChnndYknndDhSK1jN-HHBHCVnXaxw8tDEPhXji7WO9wq09xwP3SCy2a5tkHKW0u2LQCFgXnpBxt8-8joFFhARwVfF-IVwJHWqqioeJD5zCRTUqTn1j0UxqIZ62gEDgP3AmvnuVSzFlCryYOjAZq67e3Wba359yewQWjHedCq9aVqUNJqUSuhv4uIxfp-L9v2B9S_dOH7gkdcwGq9UPNoTklzs9W366z-5UKwDLlW03HTrV6Dgo2MfbWpkIazzBNXLhHYEgZxrxAsqlZ9nbYhPKa44GvqZVLcP10dNNVS-F8-kk0yE-SUX-YGBYXVoPqYFgjhRC_MXuxHb-3cy2x2Hnieig50XWCfUTcthkVapcFQ58hhxoL1YZusDztVCsLlAadPBMFTjlNtj1mFO2JxvHrBOYwBehq1dduoyUpDwWF3BNKa0pP5wpRi-LqAHeItZ2ZmTKcu2aQeMBWZulpkxwTAZGAJmI38vl8L9GF41othuis0OJvVcLr8B_U7PDBaEyyDKPqqA08nozLx7OpeWcGXFYlOWEMEovNE3SKBpDOXLiJNnBf0e0YI4_TmF9EpEFKNGalJwoW2duU3f3bER1ZS3ZENcojAVVwqmFopaH7tqACeFUhPFWe8Zr6EvWMEK61kCd77uAFyTvVd-X_HwEwNpFqEPvZ8kRgEFahP0olWIhEOJZob9KcF56R0coRrwiI87cqYxRixw1T1Qxu2qPHNF7Gs_WGDeMowDp_u7Sa_c05EBP0Wx-j8RAhsKf8xtGAz6SKXbopghmSUg.UhDrZsSc21HyfgETY4RUhg"
+  },
+
+  "authenticationAcc": {
+    "email": "samreem@luminogics.com",
+    "password": "s@mreenZainab06"
   }
 }

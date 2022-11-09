@@ -2,49 +2,70 @@ const res = require("express/lib/response")
 const quickbook = require("node-quickbooks")
 const OAuthClient = require("intuit-oauth")
 const bodyParser = require("body-parser")
-// const tools = require("../tools/tools.js")
-// const ngrok = process.env.NGROK_ENABLED === "true" ? require("ngrok") : null
-
+const config = require("../../config.json")
+const sessions = require("express-session")
+var session
+const oneHour = 60 * 60
 const urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 let oauth2_token_json = null
-let redirectUri = ""
 let oauthClient = null
 
 oauthClient = new OAuthClient({
-  clientId: "AB4UnIYlydkKMzjMKyysjhpPKR8ME3An7vfOO4aTFB9ynyfP5z", // enter the apps `clientId`
-  clientSecret: "QOqiP2FAc37lvPx5nm3eYxsnABK7PftqxvkyDgP3", // enter the apps `clientSecret`
+  clientId: config.OAuthClient.clientId,
+  clientSecret: config.OAuthClient.clientId,
   environment: "sandbox" || "production", // enter either `sandbox` or `production`
-  redirectUri: "http://localhost:8000/callback", // enter the redirectUri
-  logging: true // by default the value is `false`
+  redirectUri: config.OAuthClient.redirectUri,
+  logging: false
 })
 class oauth {
   /**
    * Get the AuthorizeUri
    */
-  GetAuthorizeUri(req, res) {
+  async GetAuthorizeUri(req, res) {
+    // console.log(config.OAuthClient.clientId)
     try {
-      const authUri = oauthClient.authorizeUri({
+      const authUri = await oauthClient.authorizeUri({
         scope: [OAuthClient.scopes.Accounting, OAuthClient.scopes.OpenId],
-        state: "intuit-test"
+        state: "testState"
       })
-      //console.log(authUri)
-      res.redirect(authUri)
+      // axios POST request
+      const options = {
+        url: authUri,
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "charset=UTF-8"
+        },
+        data: {
+          email: config.authenticationAcc.email,
+          pasword: config.authenticationAcc.password
+        }
+      }
+
+      const authAsset = await axios(options)
+      //console.log("==========>", authAsset)
     } catch (e) {
-      console.log("---------->")
       console.error("The error message is :" + e.originalMessage)
       console.error(e.intuit_tid)
     }
   }
 
   /**
-   * Handle the callback to extract the `Auth Code` and exchange them for `Bearer-Tokens`
+   * Handle the callback to extract the `Auth Code` and `realmId` exchange them for `Bearer-Tokens` name as access token and refresh Token
    */
-  async getAuthCode(req, res) {
+  async getToken(req, res) {
     try {
-      const authResponse = await oauthClient.createToken(req.url)
-      oauth2_token_json = JSON.stringify(authResponse.getJson(), null, 2)
-      res.send(authResponse.getJson())
+      if (req.authCode && req.realmId) {
+        const authResponse = await oauthClient.createToken(
+          req.authCode,
+          req.realmId
+        )
+        oauth2_token_json = JSON.stringify(authResponse.getJson(), null, 2)
+        res.send(authResponse.getJson())
+      } else {
+        res.send(config.qData)
+      }
     } catch (error) {
       console.error("The error message is :" + error.originalMessage)
       console.error(error.intuit_tid)
@@ -53,18 +74,24 @@ class oauth {
 
   retrieveToken(req, res) {
     try {
-      res.send(oauth2_token_json)
+      res.send(config.qData.accessToken)
     } catch (error) {
       console.error("The error message is :" + error.originalMessage)
       console.error(error.intuit_tid)
     }
   }
 
-  async refreshAccessToken() {
+  async refreshAccessToken(req, res) {
     try {
-      authResponse = await oauthClient.refresh()
-      oauth2_token_json = JSON.stringify(authResponse.getJson(), null, 2)
-      res.send(oauth2_token_json)
+      if (!oauthClient.isAccessTokenValid()) {
+        await oauthClient.refresh()
+      } else A
+      authResponse = await oauthClient.refresh(
+        (refreshToken = config.refreshToken)
+      )
+      res.send(authResponse)
+      //oauth2_token_json = JSON.stringify(authResponse.getJson(), null, 2)
+      //res.send(oauth2_token_json)
     } catch (error) {
       console.error("The error message is :" + error.originalMessage)
       console.error(error.intuit_tid)
@@ -73,47 +100,51 @@ class oauth {
   async getCompanyInfo(req, res) {
     try {
       const companyID = oauthClient.getToken().realmId
-      const url =
-        oauthClient.environment == "sandbox"
-          ? OAuthClient.environment.sandbox
-          : OAuthClient.environment.production
-
+      const baseURL = "http://sandbox-quickbooks.api.intute.com"
+      const url = `${baseURL}/v3/company/${config.qData.realmId}/companyinfo/${config.qData.realmId}`
+      oauthClient.environment == "sandbox"
+        ? OAuthClient.environment.sandbox
+        : OAuthClient.environment.production
+      const authHeader = `Bearer ${config.qData.accessToken}`
+      const header = {
+        Accept: "application/json",
+        Authorization: authHeader
+      }
       const authResponse = await oauthClient.makeApiCall({
-        url: `${url}v3/company/${companyID}/companyinfo/${companyID}`
+        url: url,
+        headers: header
       })
-      console.log(
-        `The response for API call is :${JSON.stringify(authResponse)}`
-      )
-      res.send(JSON.parse(authResponse.text()))
+      res.send(authResponse)
     } catch (error) {
       console.error("The error message is :" + error.originalMessage)
       console.error(error.intuit_tid)
     }
   }
   /**
-   * getCompanyInfo ()
+   * getPersonalInfo ()
    */
-  getCompanyInfo(req, res) {
-    const companyID = oauthClient.getToken().realmId
-
-    const url =
-      oauthClient.environment == "sandbox"
-        ? OAuthClient.environment.sandbox
-        : OAuthClient.environment.production
-
-    oauthClient
-      .makeApiCall({
-        url: `${url}v3/company/${companyID}/companyinfo/${companyID}`
+  async getPersonalInfo(req, res) {
+    try {
+      const baseURL = "http://sandbox-quickbooks.api.intute.com"
+      const url = `${baseURL}/v1/openid_connect/userinfo`
+      const auth_header = `Bearer ${config.qData.accessToken}`
+      const data = {
+        Authorization: auth_header
+      }
+      const headers = {
+        Accept: "application/json;charset=UTF-8",
+        Authorization: auth_header,
+        "Content-type": "*/*"
+      }
+      const authResponse = await oauthClient.makeApiCall({
+        url: url,
+        headers: headers
       })
-      .then(function (authResponse) {
-        console.log(
-          `The response for API call is :${JSON.stringify(authResponse)}`
-        )
-        res.send(JSON.parse(authResponse.text()))
-      })
-      .catch(function (e) {
-        console.error(e)
-      })
+      res.send(authResponse)
+    } catch (error) {
+      console.error("The error message is :" + error.originalMessage)
+      console.error(error.intuit_tid)
+    }
   }
 
   /**
@@ -126,52 +157,13 @@ class oauth {
     })
     res.redirect(authUri)
   }
-  // connect_to_quickbooks(req, res) {
-  //   // Set the Accounting + Payment scopes
-  //   tools.setScopes("connect_to_quickbooks")
 
-  //   // Constructs the authorization URI.
-  //   var uri = tools.intuitAuth.code.getUri({
-  //     // Add CSRF protection
-  //     state: tools.generateAntiForgery(req.session)
-  //   })
-
-  //   // Redirect
-  //   console.log("Redirecting to authorization uri: " + uri)
-  //   res.redirect(uri)
-  // }
-
-  // /** /connect_handler **/
-  // // This would be the endpoint that is called when "Get App Now" is clicked
-  // // from apps.com
-  // connect_handler(req, res) {
-  //   // Set the OpenID + Accounting + Payment scopes
-  //   tools.setScopes("connect_handler")
-
-  //   // Constructs the authorization URI.
-  //   var uri = tools.intuitAuth.code.getUri({
-  //     // Add CSRF protection
-  //     state: tools.generateAntiForgery(req.session)
-  //   })
-
-  //   // Redirect
-  //   console.log("Redirecting to authorization uri: " + uri)
-  //   res.redirect(uri)
-  // }
-  // /** /sign_in_with_intuit **/
-  // sign_in_with_intuit(req, res) {
-  //   // Set the OpenID scopes
-  //   tools.setScopes("sign_in_with_intuit")
-
-  //   // Constructs the authorization URI.
-  //   var uri = tools.intuitAuth.code.getUri({
-  //     // Add CSRF protection
-  //     state: tools.generateAntiForgery(req.session)
-  //   })
-
-  //   // Redirect
-  //   console.log("Redirecting to authorization uri: " + uri)
-  //   res.redirect(uri)
-  // }
+  async refreshToken(req, res) {
+    try {
+    } catch (error) {
+      console.error("The error message is :" + error.originalMessage)
+      console.error(error.intuit_tid)
+    }
+  }
 }
 module.exports = new oauth()

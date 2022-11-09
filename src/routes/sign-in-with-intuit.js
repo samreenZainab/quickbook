@@ -1,21 +1,12 @@
-var tools = require("../tools/tools.js")
-var express = require("express")
-var router = express.Router()
+const express = require("express")
+const router = require("express").Router()
+const OAuthClient = require("../contoller/OAuthClient-controller")
 
-/** /sign_in_with_intuit **/
-router.get("/", function (req, res) {
-  // Set the OpenID scopes
-  tools.setScopes("sign_in_with_intuit")
-
-  // Constructs the authorization URI.
-  var uri = tools.intuitAuth.code.getUri({
-    // Add CSRF protection
-    state: tools.generateAntiForgery(req.session)
-  })
-
-  // Redirect
-  console.log("Redirecting to authorization uri: " + uri)
-  res.redirect(uri)
-})
-
+router.get("/authUri", OAuthClient.GetAuthorizeUri)
+router.get("/callback", OAuthClient.getToken)
+router.get("/retrieveToken", OAuthClient.retrieveToken)
+router.get("/refreshAccessToken", OAuthClient.refreshAccessToken)
+router.get("/disconnect", OAuthClient.disconnect)
+router.get("/getCompanyInfo", OAuthClient.getCompanyInfo)
+router.get("/getPersonalInfo", OAuthClient.getPersonalInfo)
 module.exports = router

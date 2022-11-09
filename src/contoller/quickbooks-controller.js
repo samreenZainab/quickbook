@@ -1,72 +1,67 @@
-// const quickbook = require("node-quickbooks")
-// const { TOKEN_URL } = require("node-quickbooks")
-// var qbo = new quickbookZ(
-//   consumerKey,
-//   consumerSecret,
-//   oauthToken,
-//   false, // no token secret for oAuth 2.0
-//   realmId,
-//   false, // use the sandbox?
-//   true, // enable debugging?
-//   null, // set minorversion, or null for the latest version
-//   "2.0", //oAuth version
-//   refreshToken
-// )
-// qbo.createAccount(qbo)
+const quickbook = require("node-quickbooks")
+const config = require("../../config.json")
+const ResponseService = require("../services/responseService")
+qbo = new quickbook(
+  config.OAuthClient.clientId,
+  config.OAuthClient.clientSecret,
+  config.qData.accessToken,
+  true, // no token secret for oAuth 2.0
+  config.qData.realmId,
+  true, // use the sandbox?
+  true, // enable debugging?
+  null, // set minorversion, or null for the latest version
+  "2.0", //oAuth version
+  config.refreshToken
+)
+class Quickbook {
+  async createInvoice(req, res) {
+    let cust
+    let itemss
+    let ItemBeforeInvoice
+    try {
+      const obj = {
+        Line: [
+          {
+            Description: "Rock Fountain",
+            DetailType: "SalesItemLineDetail",
+            SalesItemLineDetail: {
+              TaxCodeRef: {
+                value: "TAX"
+              },
+              Qty: 1,
+              UnitPrice: 600,
+              ItemRef: {
+                name: "Rock Fountain",
+                value: "5"
+              }
+            },
+            LineNum: 1,
+            Amount: 600.0,
+            Id: "1"
+          }
+        ],
+        CustomerRef: {
+          name: "Cool Cars",
+          value: "2"
+        }
+      }
+      //The post body for the Invoice create call
+      await qbo.createInvoice(obj, (error, invoice) => {
+        if (error) {
+          console.log(error)
+        }
+        if (invoice) {
+          res.status(200).send({
+            message: "invoice has been generated",
+            invoice
+          })
+        }
+      })
+    } catch (error) {
+      console.error("The error message is :" + error)
+      console.error(error.intuit_tid)
+    }
+  }
+}
 
-// qbo.createAttachable({ Note: "My File" }, function (err, attachable) {
-//   if (err) console.log(err)
-//   else console.log(attachable.Id)
-// })
-
-// qbo.getBillPayment("42", function (err, billPayment) {
-//   console.log(billPayment)
-// })
-
-// qbo.updateCustomer(
-//   {
-//     Id: "42",
-//     SyncToken: "1",
-//     sparse: true,
-//     PrimaryEmailAddr: { Address: "customer@example.com" }
-//   },
-//   function (err, customer) {
-//     if (err) console.log(err)
-//     else console.log(customer)
-//   }
-// )
-
-// qbo.deleteAttachable("42", function (err, attachable) {
-//   if (err) console.log(err)
-//   else console.log(attachable)
-// })
-
-// qbo.findAccounts(
-//   {
-//     AccountType: "Expense",
-//     desc: "MetaData.LastUpdatedTime",
-//     limit: 5,
-//     offset: 5
-//   },
-//   function (err, accounts) {
-//     accounts.QueryResponse.Account.forEach(function (account) {
-//       console.log(account.Name)
-//     })
-//   }
-// )
-
-// qbo.reportBalanceSheet({ department: "1,4,7" }, function (err, balanceSheet) {
-//   console.log(balanceSheet)
-// })
-
-// qbo.upload(
-//   "contractor.jpg",
-//   "image/jpeg",
-//   fs.createReadStream("contractor.jpg"),
-//   "Invoice",
-//   40,
-//   function (err, data) {
-//     console.log(err)
-//     console.log(data)
-//   }
-// )
+module.exports = new Quickbook()
