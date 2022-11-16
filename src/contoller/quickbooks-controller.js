@@ -15,25 +15,25 @@ qbo = new quickbook(
   config.refreshToken
 )
 
-const findCustomer = (customerName) => {
-  let response
-  qbo.findCustomers(
-    [
-      { field: "fetchAll", value: true },
-      { field: "DisplayName", value: customerName, operator: "LIKE" }
-    ],
-    function (error, result) {
-      if (error) {
-        console.log("ERROR ====", JSON.stringify(error))
-        response = error
+const findCustomer = async (customerName) => {
+
+  return new Promise((resolve, reject) => {  // custom promise to avoid using callbacks
+    qbo.findCustomers(
+      [
+        { field: "fetchAll", value: true },
+        { field: "DisplayName", value: customerName, operator: "LIKE" }
+      ],
+      function (error, result) {
+        if (error) {
+          reject(error)
+        }
+        if (result) {
+          resolve(result)
+        }
       }
-      if (result) {
-        console.log("==========>", result)
-        response = result
-      }
-    }
-  )
-  return response
+    )
+  });
+  
 }
 const createInvoice = async (req, res) => {
   try {
@@ -101,7 +101,7 @@ const createInvoice = async (req, res) => {
     //   }
     // })
   } catch (error) {
-    console.error("The error message is :" + error)
+    console.error("The error message is :" + JSON.stringify(error))
     console.error(error.intuit_tid)
   }
 }
