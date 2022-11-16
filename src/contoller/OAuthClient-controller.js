@@ -23,28 +23,18 @@ class oauth {
    * Get the AuthorizeUri
    */
   async GetAuthorizeUri(req, res) {
-    // console.log(config.OAuthClient.clientId)
     try {
+      oauthClient = new OAuthClient({
+        clientId: req.body.clientId,
+        clientSecret: req.body.clientSecret,
+        environment: "sandbox" || "production", // enter either `sandbox` or `production`
+        redirectUri: config.OAuthClient.redirectUri
+      })
       const authUri = await oauthClient.authorizeUri({
         scope: [OAuthClient.scopes.Accounting, OAuthClient.scopes.OpenId],
         state: "testState"
       })
-      // axios POST request
-      const options = {
-        url: authUri,
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "charset=UTF-8"
-        },
-        data: {
-          email: config.authenticationAcc.email,
-          pasword: config.authenticationAcc.password
-        }
-      }
-
-      const authAsset = await axios(options)
-      //console.log("==========>", authAsset)
+      res.send(authUri)
     } catch (e) {
       console.error("The error message is :" + e.originalMessage)
       console.error(e.intuit_tid)

@@ -1,6 +1,10 @@
 const mongoose = require("mongoose")
 
 const OAuthSchema = new mongoose.Schema({
+  user: {
+    type: String,
+    require: true
+  },
   AccessToken: {
     type: String
   },

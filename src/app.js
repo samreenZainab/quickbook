@@ -5,6 +5,7 @@ const app = express()
 const mongoose = require("mongoose")
 const config = require("../config.json")
 const router = require("../router")
+const bodyParser = require("body-parser")
 
 mongoose
   .connect(config.dbUri, {
@@ -18,6 +19,10 @@ mongoose
     console.log(error)
     process.exit(1)
   })
+
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+
 app.use(router)
 app.listen(PORT, () => {
   console.log(`server listening to port: ${PORT}`)
