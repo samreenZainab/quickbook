@@ -1,25 +1,31 @@
-const env = require("dotenv").config()
-const express = require("express")
-const PORT = process.env.PORT || 8080
-const app = express()
-const mongoose = require("mongoose")
-const config = require("../config.json")
-const router = require("../router")
-
+const env = require('dotenv').config();
+const express = require('express');
+const PORT = process.env.PORT || 8080;
+const app = express();
+const mongoose = require('mongoose');
+const config = require('../config.json');
+const router = require('../router');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+app.use(cors());
 mongoose
   .connect(config.dbUri, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
   })
   .then(() => {
-    console.info("Database connected successfully")
+    console.info('Database connected successfully');
   })
   .catch((error) => {
-    console.log(error)
-    process.exit(1)
-  })
-app.use(router)
+    console.log(error);
+    process.exit(1);
+  });
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(router);
+
 app.listen(PORT, () => {
-  console.log(`server listening to port: ${PORT}`)
-})
-module.exports = app
+  console.log(`server listening to port: ${PORT}`);
+});
+module.exports = app;

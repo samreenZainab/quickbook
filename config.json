@@ -8,7 +8,7 @@
     "clientId": "ABa504quLHVnjPUuYtBJebDwji8Dm50fBq4xfgPnsdWmYiwYBl",
     "clientSecret": "c17iF7adZLIS19x3RfLyEaZnXPdZy28ThE9s7RFH",
     "environment": ["sandbox", "production"],
-    "redirectUri": "http://localhost:8000/callback"
+    "redirectUri": "http://localhost:8080/oAuth/callback"
   },
   "qbookAssets": {
     "oauthAssets": {
